@@ -1,0 +1,2 @@
+app.js tiene la configuracion de express
+index.js es el encargado de arrancar la aplicación. 
