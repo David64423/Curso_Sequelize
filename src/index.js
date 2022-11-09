@@ -1,13 +1,13 @@
 import app from './app.js';
 import {sequelize} from './database/database.js';
 
-import './models/project.js';
-import './models/task.js';
+// import './models/project.js';
+// import './models/task.js';
 let port=5000;
 
 async function  main(){
     try{
-        await sequelize.sync({force:true}); /* Este método hace una sincronizacion con la base de datos, es decir, 
+        await sequelize.sync(); /* Este método hace una sincronizacion con la base de datos, es decir, 
                                 crea tablas, las elimina o/y las crea nuevamente,etc. */ /*Si no le
                                 pongo nada como parametro, va a crear las tablas de los archivos que impor-
                                 te de models en caso de que no esten creados ya */
